@@ -62,6 +62,20 @@ usage: prometheus [<flags>]
 
 The Prometheus monitoring server
 
+Installation of alert manager on the node you want for the alert manager
+
+wget https://github.com/prometheus/alertmanager/releases/download/v0.24.0/alertmanager-0.24.0.linux-amd64.tar.gz
+
+tar xvfx alertmanager-0.24.0.linux-amd64.tar.gz
+
+ls al
+
+cd alertmanager-0.24.0.linux-amd64
+
+./alertmanager
+
+NOTE: alertmanager listens on port 9093
+
 
 Installation of Node exporter on the node you want for the node exporter
 
@@ -75,22 +89,13 @@ cd node_exporter-1.4.0.linux-amd64
 
 ./node_exporter
 
-NOTE: node-exporter listens on port 9093
+NOTE: node-exporter listens on port 9100
 
  http://10.0.0.12:9100/metrics    .......For the node exporter server On the browser
 
 
-Installation of alert manager on the node you want for the alert manager
 
-wget https://github.com/prometheus/alertmanager/releases/download/v0.24.0/alertmanager-0.24.0.linux-amd64.tar.gz
 
-tar xvfx alertmanager-0.24.0.linux-amd64.tar.gz
-
-ls al
-
-cd alertmanager-0.24.0.linux-amd64
-
-./alertmanager
 
 
 
