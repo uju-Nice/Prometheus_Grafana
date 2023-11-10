@@ -71,7 +71,7 @@ tar xvfz node_exporter-1.4.0.linux-amd64.tar.gz
 
 ls -al
 
-cd node_exporter-1.3.1.darwin-amd64
+cd node_exporter-1.4.0.linux-amd64
 
 ./node_exporter
 
